@@ -1,0 +1,25 @@
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "username": "user@gmail.com",
+  "password": "password"
+}
+###
+POST http://localhost:8080/ads
+Content-Type: multipart/form-data
+
+--boundary
+Content-Disposition: form-data; name="properties"; filename="ad.json"
+Content-Type: application/json
+
+{
+  "author": 0,
+  "image": "string",
+  "pk": 0,
+  "price": 0,
+  "title": "string"
+}
+--boundary
+Content-Disposition: form-data; name="image"; filename="sample.jpg"
+Content-Type: image/jpeg
