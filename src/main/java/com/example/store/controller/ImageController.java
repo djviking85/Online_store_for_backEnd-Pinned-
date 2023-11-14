@@ -1,4 +1,20 @@
 package com.example.store.controller;
+
+import com.example.store.entity.AvatarEntity;
+import com.example.store.entity.ImageEntity;
+import com.example.store.service.AvatarService;
+import com.example.store.service.ImageService;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
 @RestController
 @CrossOrigin(value = "http://localhost:3000")
 

@@ -1,6 +1,14 @@
 package com.example.store.service;
 
+import com.example.store.entity.AdEntity;
+import com.example.store.entity.ImageEntity;
+import com.example.store.repository.ImageRepository;
+import com.example.store.repository.UserEntityRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
+import java.util.Optional;
 
 @Service
 

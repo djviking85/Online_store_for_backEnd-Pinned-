@@ -1,5 +1,11 @@
 package com.example.store.service.impl;
 
+import com.example.store.dto.Register;
+import com.example.store.service.UserService;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.UserDetailsManager;
 import org.springframework.stereotype.Service;
 
 @Service

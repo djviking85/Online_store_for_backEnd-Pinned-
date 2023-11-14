@@ -1,5 +1,6 @@
 package com.example.store.repository;
 
+import com.example.store.entity.ImageEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 /**
  * Repository interface for accessing ImageEntity data from the database.

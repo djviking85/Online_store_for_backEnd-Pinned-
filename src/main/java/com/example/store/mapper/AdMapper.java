@@ -61,7 +61,7 @@ public interface AdMapper {
     /**
      * Method for mapping an image to a String value
      * @param adEntity {@link AdEntity}
-     * @return The link for displaying the image is passed to the controller {@link ru.skypro.homework.controller.ImageController}
+     * @return The link for displaying the image is passed to the controller {@link com.example.store.controller.ImageController}
      */
     @Named(value = "imagesToString")
     default String imagesToString(AdEntity adEntity){

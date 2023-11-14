@@ -1,6 +1,10 @@
 package com.example.store.controller;
 
 import com.example.store.dto.Ad;
+import com.example.store.dto.Ads;
+import com.example.store.dto.CreateOrUpdateAd;
+import com.example.store.dto.ExtendedAd;
+import com.example.store.exception.AdNotFoundException;
 import com.example.store.service.AdService;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

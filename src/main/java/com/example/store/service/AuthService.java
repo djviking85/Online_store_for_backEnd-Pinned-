@@ -1,5 +1,7 @@
 package com.example.store.service;
 
+import com.example.store.dto.Register;
+
 public interface AuthService {
     /**
      * @param userName - user's login (email)

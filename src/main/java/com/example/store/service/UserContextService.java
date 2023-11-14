@@ -1,6 +1,12 @@
 package com.example.store.service;
 
+import com.example.store.entity.UserEntity;
+import com.example.store.repository.UserEntityRepository;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class UserContextService {

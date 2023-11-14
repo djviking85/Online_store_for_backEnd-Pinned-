@@ -1,6 +1,21 @@
 package com.example.store.service;
 
+import com.example.store.dto.Comment;
+import com.example.store.dto.Comments;
+import com.example.store.entity.AdEntity;
+import com.example.store.entity.CommentEntity;
+import com.example.store.entity.UserEntity;
+import com.example.store.mapper.CommentMapper;
+import com.example.store.repository.AdEntityRepository;
+import com.example.store.repository.CommentEntityRepository;
+import com.example.store.repository.UserEntityRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.security.Principal;
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CommentsService {

@@ -1,7 +1,25 @@
 package com.example.store.service;
 
+import com.example.store.dto.Ad;
+import com.example.store.dto.Ads;
+import com.example.store.dto.CreateOrUpdateAd;
+import com.example.store.dto.ExtendedAd;
+import com.example.store.entity.AdEntity;
+import com.example.store.entity.ImageEntity;
+import com.example.store.entity.UserEntity;
+import com.example.store.exception.AdNotFoundException;
+import com.example.store.mapper.AdMapper;
+import com.example.store.repository.AdEntityRepository;
+import com.example.store.repository.UserEntityRepository;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
+import java.security.Principal;
+import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional

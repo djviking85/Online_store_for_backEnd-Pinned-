@@ -23,7 +23,7 @@ public interface UserMapper {
     /**
      * Method for mapping an avatar to a String value
      * @param userEntity {@link UserEntity}
-     * @return The link for displaying the avatar is passed to the controller {@link ru.skypro.homework.controller.ImageController}
+     * @return The link for displaying the avatar is passed to the controller {@link com.example.store.controller.ImageController}
      */
     @Named("avatarToString")
     default String avatarToString(UserEntity userEntity) {

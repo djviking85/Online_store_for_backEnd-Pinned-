@@ -1,6 +1,9 @@
 package com.example.store.repository;
 
+import com.example.store.entity.AdEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
 
 /**
  * Repository interface for accessing AdEntity data from the database.
